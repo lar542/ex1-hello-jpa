@@ -5,7 +5,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
-@Entity
+//@Entity
 public class Member {
 
     //DB가 만들어주는 값을 PK로 사용한다 기본값 AUTO 사용

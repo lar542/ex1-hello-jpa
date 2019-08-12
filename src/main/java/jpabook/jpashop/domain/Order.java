@@ -3,7 +3,7 @@ package jpabook.jpashop.domain;
 import javax.persistence.*;
 import java.time.LocalDateTime;
 
-@Entity
+//@Entity
 @Table(name = "ORDERS") //어떤 DB는 order 가 예약어로 설정되어있으므로
 public class Order {
 
