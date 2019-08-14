@@ -1,11 +1,10 @@
 package jpabook.jpashop.domain;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
-//@Entity
+@Entity
 public class Member {
 
     //DB가 만들어주는 값을 PK로 사용한다 기본값 AUTO 사용
@@ -20,6 +19,9 @@ public class Member {
     private String street;
 
     private String zipcode;
+
+    @OneToMany(mappedBy = "member")
+    private List<Order> orders = new ArrayList<>();
 
     public Long getId() {
         return id;
